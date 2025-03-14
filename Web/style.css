@@ -1,0 +1,58 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+::selection {
+    background: #000000; 
+    color: rgb(27, 255, 15);
+}
+
+.main-content {
+    background-color: rgb(27, 255, 15);
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    transition: all .5s;
+    animation-name: popOut;
+    animation-duration: 2s;
+}
+
+.main-content:hover{
+    transform: translateY(10px);    
+    background-color: black;
+    color: rgb(27, 255, 15);
+    
+}
+.main-content:hover #prajwal-56{
+    color: lime;
+}
+
+@keyframes popOut {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#prajwal-56 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    display: block;
+    font-family: "Cascadia Code", monospace;
+    color: black;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
